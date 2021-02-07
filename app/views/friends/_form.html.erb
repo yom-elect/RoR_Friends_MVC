@@ -35,6 +35,12 @@
     <%= form.text_field :social, class:"form-control",
      placeholder: "Social" %>
   </div>
+
+  <div class="field form-group mt-2">
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control",
+      value: current_user.id, type: :hidden %>
+  </div>
+
   <br>
   <div class="actions">
     <%= form.submit class:"btn btn-primary" %>
